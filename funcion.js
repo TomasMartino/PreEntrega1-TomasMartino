@@ -44,6 +44,7 @@ function obtenerMonto() {
 
 function mostrarMenu() {
   console.log("Conversor de monedas");
+  
   console.log("--------------------");
   console.log("1. Convertir moneda");
   console.log("2. Salir");
@@ -52,7 +53,7 @@ function mostrarMenu() {
 interruptor = true;
 while (interruptor === true) {
   mostrarMenu();
-  const opcion = prompt("Ingrese su opción: ");
+  const opcion = prompt("Ingrese su opción(Opciones por consola): ");
   switch (opcion) {
     case "1":
       const { monedaOrigen, monedaDestino } = obtenerMonedas();
